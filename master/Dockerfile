@@ -8,7 +8,7 @@ ADD file.json /usr/src/app
 
 RUN pip install requests
 
-EXPOSE 5006
+EXPOSE 5000
 
 CMD [ "python", "./bayes_master.py" ]
 

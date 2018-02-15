@@ -56,6 +56,11 @@ def test1():
     return jsonify(classification)
 
 
+@app.route('/ping', methods=['GET'])
+def ping():
+    return "It works!"
+
+
 if __name__ == '__main__':
     log.info("Worker started")
     app.run(host='0.0.0.0', port=port)

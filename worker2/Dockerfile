@@ -8,7 +8,7 @@ ADD ./bayes_worker.py /usr/src/app
 
 RUN pip install flask
 
-EXPOSE 5002
+EXPOSE 5000
 
-CMD [ "python", "./bayes_worker.py", "5002" ]
+CMD [ "python", "./bayes_worker.py", "5000" ]
 
